@@ -5,11 +5,12 @@ using UnityEngine.Rendering;
 
 public class DragObjectScript : MonoBehaviour
 {
+    float DragOffset = 0.5f;
     private GameObject LeftBoundary;
     private GameObject RightBoundary;
     private GameObject TopBoundary;
     private GameObject BottomBoundary;
-    Vector3 difference = Vector3.zero;
+    private Vector3 difference = Vector3.zero;
 
     private void Start()
     {
@@ -42,8 +43,8 @@ public class DragObjectScript : MonoBehaviour
     private void OnMouseDrag()
     {
         Vector3 MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if(MousePosition.x < LeftBoundary.transform.position.x || MousePosition.x > RightBoundary.transform.position.x 
-           || MousePosition.y > TopBoundary.transform.position.y || MousePosition.y < BottomBoundary.transform.position.y)
+        if(MousePosition.x  < LeftBoundary.transform.position.x + DragOffset || MousePosition.x > RightBoundary.transform.position.x - DragOffset
+           || MousePosition.y > TopBoundary.transform.position.y - DragOffset || MousePosition.y < BottomBoundary.transform.position.y + DragOffset)
         {
             return;
         }
