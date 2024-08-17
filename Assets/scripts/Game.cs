@@ -5,7 +5,7 @@ using TMPro;
 
 public class Game : MonoBehaviour
 {
-    [SerializeField] private ObjectForSale[] levelItems;
+    [SerializeField] private GameObject[] levelItems;
     [SerializeField] private GameObject noteUI = null;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text timeText;
@@ -20,16 +20,13 @@ public class Game : MonoBehaviour
 
     private int POINTS = 5;
 
-    private void Awake()
-    {
-        levelItems = FindObjectsOfType<ObjectForSale>();
-    }
-
     // Start is called before the first frame update
     void Start()
     {
         // notePressed();
         //noteUI.SetActive(false);
+
+        Instantiate(levelItems[0]);
     }
 
     // Update is called once per frame
@@ -51,10 +48,9 @@ public class Game : MonoBehaviour
     void displayNextItem()
     {
 
-        levelItems[currentObjectIndex].gameObject.SetActive(false);
-
         if (currentObjectIndex + 1 < levelItems.Length)
         {
+            print("Add plus 1");
             currentObjectIndex++;
         } else
         {
@@ -64,7 +60,7 @@ public class Game : MonoBehaviour
 
         print(currentObjectIndex);
         print(levelItems.Length);
-        levelItems[currentObjectIndex].gameObject.SetActive(true);
+        Instantiate(levelItems[currentObjectIndex]);
     }
 
     void EndGame()
@@ -74,7 +70,7 @@ public class Game : MonoBehaviour
 
     public void AcceptPressed()
     {
-        bool isItemOk = levelItems[currentObjectIndex].IsItemOk();
+        bool isItemOk = levelItems[currentObjectIndex].GetComponent<ObjectForSale>().IsItemOk();
 
         print("accept button was pressed");
 
@@ -87,13 +83,15 @@ public class Game : MonoBehaviour
             showAngryManager(isItemOk);
         }
 
+        FindObjectOfType<AnimationMovment>().MoveToBuyer();
+
         displayNextItem();
     }
 
     public void RefusePressed()
     {
         print("Refuse button was pressed");
-        bool isItemOk = levelItems[currentObjectIndex].IsItemOk();
+        bool isItemOk = levelItems[currentObjectIndex].GetComponent<ObjectForSale>().IsItemOk();
 
         if(isItemOk)
         {
@@ -104,13 +102,15 @@ public class Game : MonoBehaviour
             score += POINTS;
         }
 
+        FindObjectOfType<AnimationMovment>().MoveToSeller();
+
         displayNextItem();
     }
 
     public void notePressed()
     {
         noteUI.SetActive(true);
-        noteUI.GetComponentInChildren<TMP_Text>().text = levelItems[currentObjectIndex].note;
+        noteUI.GetComponentInChildren<TMP_Text>().text = levelItems[currentObjectIndex].GetComponent<ObjectForSale>().note;
     }
 
     public void showAngryManager(bool isItemOK)

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8988442778710069630}
+  - component: {fileID: 8135725770014812146}
   m_Layer: 0
   m_Name: SellingPoint
   m_TagString: Untagged
@@ -25,12 +26,24 @@ Transform:
   m_GameObject: {fileID: 53183675435033980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 4.4, z: 0}
+  m_LocalPosition: {x: -2, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2170034212095696609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8135725770014812146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53183675435033980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f282b387b060a479096e9bd74b53ff51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2335290918975918484
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,6 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1063439802589458114}
+  - component: {fileID: 8892377021017116686}
   m_Layer: 0
   m_Name: ExitPoint
   m_TagString: Untagged
@@ -91,12 +105,24 @@ Transform:
   m_GameObject: {fileID: 2824845180875161104}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 24.3, z: 0}
+  m_LocalPosition: {x: -2, y: 24.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2170034212095696609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8892377021017116686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824845180875161104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd166f605b64a779a4169d7f4becc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4508435545732322698
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1073530052322589006}
+  - component: {fileID: 1747473563466362794}
   m_Layer: 0
   m_Name: EnterPoint
   m_TagString: Untagged
@@ -122,12 +149,24 @@ Transform:
   m_GameObject: {fileID: 4508435545732322698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 24.3, z: 0}
+  m_LocalPosition: {x: -2, y: 24.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2170034212095696609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747473563466362794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508435545732322698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9288ea8fe51604ff1af5a5c0354b4aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8915357596700565553
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3650541661253834950}
+  - component: {fileID: 2658473524557970727}
   m_Layer: 0
   m_Name: BuyPoint
   m_TagString: Untagged
@@ -153,9 +193,21 @@ Transform:
   m_GameObject: {fileID: 8915357596700565553}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -16.9, z: 0}
+  m_LocalPosition: {x: -2, y: -16.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2170034212095696609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2658473524557970727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8915357596700565553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595ad9bf5d14d4c25813544cc86e40ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
