@@ -86,9 +86,13 @@ public class MagnifyingGlassScript : MonoBehaviour
         }
         
     }
-    private void OnTriggerExit2D()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        MagnifyingGlassText.gameObject.SetActive(false);
+        if (collision.GetComponent<ObjectForSale>() != null)
+        {
+            MagnifyingGlassText.gameObject.SetActive(false);
+        }
+            
     }
    
     
