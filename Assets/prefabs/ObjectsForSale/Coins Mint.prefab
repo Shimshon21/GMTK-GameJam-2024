@@ -144,6 +144,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins Mint
       objectReference: {fileID: 0}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_Size.x
+      value: 24.800001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_Size.y
+      value: 21.615234
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 30b2bb14e9945da48a6eff5609f17b83, type: 3}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4396750391122120315, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -154,8 +170,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5814480100951761493, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: note
-      value: 'Name: Antique Coins, Mint Condition \n Price: 260 coins \n Weight:
-        130 g. \n Quality: Good'
+      value: 'Name: Antique Coins, Mint Condition
+
+
+        Price: 260 coins
+
+
+        Weight:
+        130 g.
+
+
+        Quality: Good'
       objectReference: {fileID: 0}
     - target: {fileID: 5814480100951761493, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: givenItem.name

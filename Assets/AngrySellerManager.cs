@@ -32,7 +32,7 @@ public class AngrySellerManager : MonoBehaviour
         targetTime = 5.0f;
         if (wasItemOk)
         {
-            warning.text = "What are you doing?? this is a great price!";
+            warning.text = "You missed a good one, you moron.";
             return;
         }
 
