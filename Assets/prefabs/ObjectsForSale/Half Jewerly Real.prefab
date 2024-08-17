@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5122109154267472712
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 191884025394346342, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: note
+      value: 'Name: Not-so-full Jewerly Box \n Price: 200 coins \n Weight: 100 g.
+        \n Quality: Good'
+      objectReference: {fileID: 0}
+    - target: {fileID: 191884025394346342, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: givenItem.name
+      value: Not-so-full Jewerly Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 191884025394346342, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: givenItem.price
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 191884025394346342, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: givenItem.weight
+      value: 100 g.
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679743382897860885, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736291150066331245, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_Size.x
+      value: 18.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736291150066331245, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_Size.y
+      value: 17.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736291150066331245, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70e58038f3a3ae642986b6eec08e547f, type: 3}
+    - target: {fileID: 2736291150066331245, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423196630619130107, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_Name
+      value: Half Jewerly Real
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006554023632688456, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006554023632688456, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
