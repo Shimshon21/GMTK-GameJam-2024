@@ -7,7 +7,7 @@ public class ObjectForSale : MonoBehaviour
 {
     [SerializeField] private ItemProperties givenItem;
 
-    [SerializeField] private ItemProperties actualItem;
+    [SerializeField] public ItemProperties actualItem;
 
     [TextArea] public string note;
 

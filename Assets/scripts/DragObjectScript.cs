@@ -42,6 +42,12 @@ public class DragObjectScript : MonoBehaviour
     {
         difference = (Vector3)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector3)transform.position;
     }
+
+    private void OnMouseUp()
+    {
+        
+    }
+
     private void OnMouseDrag()
     {
         //Change ObjectText as Object Name
