@@ -210,8 +210,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5814480100951761493, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: note
-      value: 'Name: Jewerly Box \n Price: 300 coins \n Weight: 150 g. \n Quality:
-        Good'
+      value: 'Name: Jewerly Box
+
+
+        Price: 300 coins
+
+
+        Weight: 150
+        g.
+
+
+        Quality: Good'
       objectReference: {fileID: 0}
     - target: {fileID: 5814480100951761493, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: givenItem.name

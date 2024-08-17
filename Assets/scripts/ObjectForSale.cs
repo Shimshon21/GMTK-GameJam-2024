@@ -13,21 +13,19 @@ public class ObjectForSale : MonoBehaviour
 
     public bool IsItemOk()
     {
-        if(givenItem.name == actualItem.name) {
-            return false;
-        }
+        Boolean isNameTrue = givenItem.name == actualItem.name;
+        Boolean isWeightTrue = givenItem.name == actualItem.name;
+        Boolean isQualityTrue = givenItem.name == actualItem.name;
+        Boolean isPriceTrue = givenItem.price == actualItem.price;
 
-        if (givenItem.price == actualItem.price)
+        if(isNameTrue && isWeightTrue && isQualityTrue)
+        {
+            return true;
+        }
+        else
         {
             return false;
         }
-
-        if (givenItem.weight == actualItem.weight)
-        {
-            return false;
-        }
-
-        return true;
     }
 
 }

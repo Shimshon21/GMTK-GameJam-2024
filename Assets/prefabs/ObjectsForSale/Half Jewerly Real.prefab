@@ -10,8 +10,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191884025394346342, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
       propertyPath: note
-      value: 'Name: Not-so-full Jewerly Box \n Price: 200 coins \n Weight: 100 g.
-        \n Quality: Good'
+      value: 'Name: Not-so-full Jewerly Box
+
+
+        Price: 200 coins
+
+
+        Weight:
+        100 g.
+
+
+        Quality: Good'
       objectReference: {fileID: 0}
     - target: {fileID: 191884025394346342, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
       propertyPath: givenItem.name
