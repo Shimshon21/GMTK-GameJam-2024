@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8653816998145126862}
   - component: {fileID: 6084052426949566270}
   - component: {fileID: 6785374161881858222}
+  - component: {fileID: 3050129567820318870}
   m_Layer: 0
   m_Name: ObjectForSale
   m_TagString: Untagged
@@ -122,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d218ed89449cd1e4ebe6545522fc27fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjectText: {fileID: 0}
 --- !u!60 &6785374161881858222
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -173,3 +175,30 @@ PolygonCollider2D:
       - {x: 0.08, y: 0.07}
       - {x: 0.055, y: 0.08}
   m_UseDelaunayMesh: 0
+--- !u!50 &3050129567820318870
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827207745113887688}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
