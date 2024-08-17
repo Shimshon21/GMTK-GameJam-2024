@@ -1193,6 +1193,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AcceptPressed
       objectReference: {fileID: 0}
+    - target: {fileID: 2938017200143846759, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
+      propertyPath: m_Color.a
+      value: 0.47058824
+      objectReference: {fileID: 0}
     - target: {fileID: 4495076205472250863, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
       propertyPath: m_SizeDelta.x
       value: 379.78
@@ -1286,6 +1290,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6902189212464630868, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902189212464630868, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902189212464630868, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902189212464630868, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
       propertyPath: m_fontSizeBase
       value: 36
       objectReference: {fileID: 0}
@@ -1293,6 +1309,14 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2100000, guid: b840144e7624e48318a9764898d35a2d, type: 2}
+    - target: {fileID: 6902189212464630868, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459814309428713861, guid: 9bff47515acaa4d85a58ce46bf8f7a78, type: 3}
+      propertyPath: m_Color.a
+      value: 0.47058824
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1446,7 +1470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &914708304
 Transform:
   m_ObjectHideFlags: 0
@@ -1456,7 +1480,7 @@ Transform:
   m_GameObject: {fileID: 914708303}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -8, z: -5}
+  m_LocalPosition: {x: 0, y: -10, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1501,7 +1525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -810, y: 480}
+  m_AnchoredPosition: {x: 825, y: 480}
   m_SizeDelta: {x: 232.89001, y: 58.369995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &995904545
@@ -1538,7 +1562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -176.91003}
+  m_AnchoredPosition: {x: 100, y: -110}
   m_SizeDelta: {x: 123.75, y: 175.45001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134283266 stripped
@@ -3158,9 +3182,12 @@ MonoBehaviour:
   - {fileID: 7257792768123918146, guid: 96666e2482c8a434a9c5f40f2a8a7826, type: 3}
   - {fileID: 5423196630619130107, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
   - {fileID: 5751653544804995116, guid: 4e8cc5d2a93a05a45970ce0fdc952451, type: 3}
-  - {fileID: 2345669573581999130, guid: 1db67ddd30c8cb44a80538b587071394, type: 3}
-  - {fileID: 8255634234778973273, guid: 5d536f0e282177649b76c40393e1fbbe, type: 3}
   - {fileID: 6125224598010214225, guid: 6f3432fe4c6e8b34695efaa133aa0524, type: 3}
+  - {fileID: 8255634234778973273, guid: 5d536f0e282177649b76c40393e1fbbe, type: 3}
+  - {fileID: 2345669573581999130, guid: 1db67ddd30c8cb44a80538b587071394, type: 3}
+  - {fileID: 3033305004225838503, guid: 49c3881c481cf9142b0c1ff57c1b14e9, type: 3}
+  - {fileID: 1854509216585909801, guid: 953012582df4c6040bbcae13b6fe0101, type: 3}
+  - {fileID: 2039127205216038565, guid: 48cf1f2974950ae4ca33a12e590d01fe, type: 3}
   noteUI: {fileID: 92723444}
   scoreText: {fileID: 1280804847}
   timeText: {fileID: 1368742879}
