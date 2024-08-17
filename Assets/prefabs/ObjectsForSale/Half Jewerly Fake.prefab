@@ -8,9 +8,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1139769668590191966, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139769668590191966, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139769668590191966, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139769668590191966, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139769668590191966, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 18.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139769668590191966, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 17.53
+      objectReference: {fileID: 0}
     - target: {fileID: 1827207745113887688, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: m_Name
       value: Half Jewerly Fake
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_Size.x
+      value: 18.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_Size.y
+      value: 17.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70e58038f3a3ae642986b6eec08e547f, type: 3}
+    - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4396750391122120315, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: m_LocalPosition.x
