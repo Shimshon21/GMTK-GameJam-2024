@@ -3005,7 +3005,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2078805794}
+    m_TransformParent: {fileID: 1915817179}
     m_Modifications:
     - target: {fileID: 2435637238489758507, guid: bb660f1efb6425241bf828b21584680e, type: 3}
       propertyPath: m_Text
@@ -3486,6 +3486,8 @@ MonoBehaviour:
   sellerManager: {fileID: 1134283266}
   sparkleSpawn: {fileID: 914708304}
   sparkleEffect: {fileID: 7668731448261317933, guid: e94488701d83f4eacb84ba7242d5d6a7, type: 3}
+  acceptClip: {fileID: 0}
+  refuseClip: {fileID: 0}
   targetTime: 120
 --- !u!4 &1756883714
 Transform:
@@ -3828,6 +3830,7 @@ RectTransform:
   - {fileID: 170329285}
   - {fileID: 806962846}
   - {fileID: 1412810087}
+  - {fileID: 2115562739}
   - {fileID: 11116101}
   - {fileID: 1530424401}
   - {fileID: 280411990}
@@ -4170,7 +4173,6 @@ RectTransform:
   - {fileID: 921916221}
   - {fileID: 92723445}
   - {fileID: 1915817179}
-  - {fileID: 2115562739}
   - {fileID: 759964208}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
