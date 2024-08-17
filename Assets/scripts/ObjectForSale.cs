@@ -9,7 +9,7 @@ public class ObjectForSale : MonoBehaviour
 
     [SerializeField] private ItemProperties actualItem;
 
-    [SerializeField] public string note;
+    [TextArea] public string note;
 
     public bool IsItemOk()
     {
