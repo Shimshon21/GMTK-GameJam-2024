@@ -3983,6 +3983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagnifyingGlass
       objectReference: {fileID: 0}
+    - target: {fileID: 5430954377563225166, guid: 0e17a31533ce7a347af204b74f29f138, type: 3}
+      propertyPath: m_Radius
+      value: 3.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5782437424382178182, guid: 0e17a31533ce7a347af204b74f29f138, type: 3}
       propertyPath: m_SortingOrder
       value: 10
