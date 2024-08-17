@@ -1,25 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
-using TMPro;
+using UnityEngine.EventSystems;
 
-public class DragObjectScript : MonoBehaviour
+public class MagnifyingGlassScript : MonoBehaviour
 {
+    private Vector3 OriginalPosition;
     float DragOffset = 0.5f;
     private GameObject LeftBoundary;
     private GameObject RightBoundary;
     private GameObject TopBoundary;
     private GameObject BottomBoundary;
     private Vector3 difference = Vector3.zero;
-    [SerializeField] TMP_Text ObjectText;
-    
+    private bool canuse = false;
+
+   
+
     private void Start()
-    {        
+    {
+        OriginalPosition = transform.position ;
         GameObject[] borders = GameObject.FindGameObjectsWithTag("Borders");
-        foreach(GameObject border in borders)
+        foreach (GameObject border in borders)
         {
-            if(LeftBoundary == null || border.transform.position.x < LeftBoundary.transform.position.x)
+            if (LeftBoundary == null || border.transform.position.x < LeftBoundary.transform.position.x)
             {
                 LeftBoundary = border;
             }
@@ -40,22 +43,33 @@ public class DragObjectScript : MonoBehaviour
 
     private void OnMouseDown()
     {
+        canuse = true;
         difference = (Vector3)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector3)transform.position;
     }
     private void OnMouseDrag()
     {
-        //Change ObjectText as Object Name
         Vector3 MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (MousePosition.x < LeftBoundary.transform.position.x + DragOffset || MousePosition.x > RightBoundary.transform.position.x - DragOffset
            || MousePosition.y > TopBoundary.transform.position.y - DragOffset || MousePosition.y < BottomBoundary.transform.position.y + DragOffset)
         {
             return;
         }
-        else
-        {
-            transform.position = (Vector3)MousePosition - difference;
-        }
-
-        ObjectText.transform.position = transform.position + new Vector3(0, 1, 0);
+        else transform.position = (Vector3)MousePosition - difference;
     }
+    private void OnMouseUp()
+    {
+        canuse = false;
+      transform.position = OriginalPosition;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (canuse)
+        {
+            if (collision.name == "Object")
+                Debug.Log("MagnifyingGlass Triggered with Object");
+        }
+        
+    }
+   
+    
 }
