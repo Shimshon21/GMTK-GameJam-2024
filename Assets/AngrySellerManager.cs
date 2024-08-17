@@ -36,6 +36,6 @@ public class AngrySellerManager : MonoBehaviour
             return;
         }
 
-        warning.text = "Bloody hell, why did you bought this item?!";
+        warning.text = "That's junk, you dumbass!";
     }
 }

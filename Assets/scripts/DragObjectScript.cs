@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using TMPro;
+using Unity.VisualScripting;
 
 public class DragObjectScript : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class DragObjectScript : MonoBehaviour
     
     private void Start()
     {        
+        ObjectText.SetText(this.GetComponent<ObjectForSale>().actualItem.name);
         GameObject[] borders = GameObject.FindGameObjectsWithTag("Borders");
         foreach(GameObject border in borders)
         {
