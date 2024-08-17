@@ -205,6 +205,10 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].y
       value: 5.906286
       objectReference: {fileID: 0}
+    - target: {fileID: 4112795469343444368, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5423196630619130107, guid: c12e2d90fe463a6448a7ea8a2904d6fb, type: 3}
       propertyPath: m_Name
       value: Half Jewerly Real

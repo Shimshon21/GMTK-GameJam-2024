@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using Unity.VisualScripting;
 
 public class MagnifyingGlassScript : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class MagnifyingGlassScript : MonoBehaviour
 
     private void Start()
     {
+        this.GetComponentInChildren<Canvas>().worldCamera = Camera.main;
         OriginalPosition = transform.position ;
         GameObject[] borders = GameObject.FindGameObjectsWithTag("Borders");
         foreach (GameObject border in borders)
@@ -70,9 +72,16 @@ public class MagnifyingGlassScript : MonoBehaviour
         {
             if (CanUse)
             {
+                if(collision.GetComponent<ObjectForSale>().actualItem.isGoodQuality)
+                {
+                    MagnifyingGlassText.SetText("Good");
+                }
+                else
+                {
+                    MagnifyingGlassText.SetText("Poor");
+                }
+                MagnifyingGlassText.transform.position = transform.position + new Vector3(3,3, 0);
                 MagnifyingGlassText.gameObject.SetActive(true);
-                if (collision.gameObject.GetComponent<ObjectForSale>() != null)
-                MagnifyingGlassText.transform.position = transform.position + new Vector3(2.2f,1, 0);
             }
         }
         

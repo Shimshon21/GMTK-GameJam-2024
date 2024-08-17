@@ -16,8 +16,8 @@ public class DragObjectScript : MonoBehaviour
     [SerializeField] TextMeshProUGUI ObjectText;
     
     private void Start()
-    {        
-        ObjectText.SetText(this.GetComponent<ObjectForSale>().actualItem.name);
+    {
+        this.GetComponentInChildren<Canvas>().worldCamera = Camera.main;
         GameObject[] borders = GameObject.FindGameObjectsWithTag("Borders");
         foreach(GameObject border in borders)
         {
@@ -42,6 +42,7 @@ public class DragObjectScript : MonoBehaviour
 
     private void OnMouseDown()
     {
+        ObjectText.SetText(this.GetComponent<ObjectForSale>().actualItem.name);
         ObjectText.gameObject.SetActive(true);
         difference = (Vector3)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector3)transform.position;
     }
@@ -65,7 +66,7 @@ public class DragObjectScript : MonoBehaviour
             transform.position = (Vector3)MousePosition - difference;
         }
 
-        ObjectText.transform.position = transform.position + new Vector3(0, 1, 0);
+        ObjectText.transform.position = transform.position + new Vector3(2, 2, 0);
         Debug.Log(ObjectText.transform.position);
     }
 }
