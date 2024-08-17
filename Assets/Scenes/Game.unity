@@ -800,12 +800,20 @@ PrefabInstance:
       value: Sparkle
       objectReference: {fileID: 0}
     - target: {fileID: 7833101572538618417, guid: e94488701d83f4eacb84ba7242d5d6a7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833101572538618417, guid: e94488701d83f4eacb84ba7242d5d6a7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833101572538618417, guid: e94488701d83f4eacb84ba7242d5d6a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.37
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7833101572538618417, guid: e94488701d83f4eacb84ba7242d5d6a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.92
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7833101572538618417, guid: e94488701d83f4eacb84ba7242d5d6a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3982,6 +3990,18 @@ PrefabInstance:
     - target: {fileID: 390345917154424749, guid: 0e17a31533ce7a347af204b74f29f138, type: 3}
       propertyPath: m_Name
       value: MagnifyingGlass
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512909727682620575, guid: 0e17a31533ce7a347af204b74f29f138, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294371262617404572, guid: 0e17a31533ce7a347af204b74f29f138, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294371262617404572, guid: 0e17a31533ce7a347af204b74f29f138, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5430954377563225166, guid: 0e17a31533ce7a347af204b74f29f138, type: 3}
       propertyPath: m_Radius
