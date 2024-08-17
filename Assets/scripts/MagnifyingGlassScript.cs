@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class MagnifyingGlassScript : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class MagnifyingGlassScript : MonoBehaviour
     private GameObject TopBoundary;
     private GameObject BottomBoundary;
     private Vector3 difference = Vector3.zero;
-    private bool canuse = false;
+    private bool CanUse = false;
+    [SerializeField] TMP_Text MagnifyingGlassText;
 
    
 
@@ -43,7 +45,7 @@ public class MagnifyingGlassScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        canuse = true;
+        CanUse = true;
         difference = (Vector3)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector3)transform.position;
     }
     private void OnMouseDrag()
@@ -58,17 +60,26 @@ public class MagnifyingGlassScript : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        canuse = false;
-      transform.position = OriginalPosition;
+        MagnifyingGlassText.gameObject.SetActive(false);
+        CanUse = false;
+        transform.position = OriginalPosition;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (canuse)
+        if (collision.GetComponent<ObjectForSale>() != null)
         {
-            if (collision.name == "Object")
-                Debug.Log("MagnifyingGlass Triggered with Object");
+            if (CanUse)
+            {
+                MagnifyingGlassText.gameObject.SetActive(true);
+                if (collision.gameObject.GetComponent<ObjectForSale>() != null)
+                MagnifyingGlassText.transform.position = transform.position + new Vector3(2.2f,1, 0);
+            }
         }
         
+    }
+    private void OnTriggerExit2D()
+    {
+        MagnifyingGlassText.gameObject.SetActive(false);
     }
    
     

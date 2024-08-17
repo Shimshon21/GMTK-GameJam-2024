@@ -14,9 +14,8 @@ public class ScaleScript : MonoBehaviour
 
        if (collision.GetComponent<ObjectForSale>() != null)
        {
-            scale.text = $"{collision.GetComponent<ObjectForSale>().actualItem.weight}Kg";
+            scale.text = $"{collision.GetComponent<ObjectForSale>().actualItem.weight}";
             Debug.Log(collision.name);
-            //Change ObjectText as its Scale value
        } else
         {
             Debug.Log("The item is not ObjectForSale");
@@ -27,7 +26,12 @@ public class ScaleScript : MonoBehaviour
     {
         if (collision.GetComponent<ObjectForSale>() != null)
         {
-            scale.text = "0Kg";
+            scale.text = "";
         }
+    }
+    
+    private void OnMouseUp()
+    {
+
     }
 }

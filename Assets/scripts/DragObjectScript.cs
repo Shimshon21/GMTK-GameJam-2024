@@ -12,7 +12,7 @@ public class DragObjectScript : MonoBehaviour
     private GameObject TopBoundary;
     private GameObject BottomBoundary;
     private Vector3 difference = Vector3.zero;
-    [SerializeField] TMP_Text ObjectText;
+    [SerializeField] TextMeshProUGUI ObjectText;
     
     private void Start()
     {        
@@ -40,12 +40,13 @@ public class DragObjectScript : MonoBehaviour
 
     private void OnMouseDown()
     {
+        ObjectText.gameObject.SetActive(true);
         difference = (Vector3)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector3)transform.position;
     }
 
     private void OnMouseUp()
     {
-        
+        ObjectText.gameObject.SetActive(false);
     }
 
     private void OnMouseDrag()
@@ -63,5 +64,6 @@ public class DragObjectScript : MonoBehaviour
         }
 
         ObjectText.transform.position = transform.position + new Vector3(0, 1, 0);
+        Debug.Log(ObjectText.transform.position);
     }
 }
