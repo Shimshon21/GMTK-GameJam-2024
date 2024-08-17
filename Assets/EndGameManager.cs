@@ -9,7 +9,6 @@ public class EndGameManager : MonoBehaviour
     [SerializeField] TMP_Text title;
     [SerializeField] TMP_Text text;
 
-
     [SerializeField] int worstScore;
     [SerializeField] int bestScore;
 
@@ -47,6 +46,8 @@ public class EndGameManager : MonoBehaviour
             title.text = "You are the best saller";
             text.text = "You got promoted to be the manager";
         }
+
+        text.text += $"\n(score: {score})";
     }
 
     public void ReloadScene()

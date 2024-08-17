@@ -30,15 +30,6 @@ public class ObjectForSale : MonoBehaviour
         return true;
     }
 
-    public string failedText()
-    {
-        if (IsItemOk())
-        {
-            return "What are you doing?? this is a great price!";
-        }
-
-        return "Bloody hell, why did you bought this item?!";
-    }
 }
 
 [Serializable]

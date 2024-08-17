@@ -11,14 +11,19 @@ public class Game : MonoBehaviour
     [SerializeField] private TMP_Text timeText;
 
     [SerializeField] private EndGameManager endGameManager;
+    [SerializeField] private AngrySellerManager sellerManager;
 
     private int score = 0;
-    private int points = 5;
     private int currentObjectIndex = 0;
 
     public float targetTime = 60.0f;
 
+    private int POINTS = 5;
 
+    private void Awake()
+    {
+        levelItems = FindObjectsOfType<ObjectForSale>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -69,14 +74,17 @@ public class Game : MonoBehaviour
 
     public void AcceptPressed()
     {
+        bool isItemOk = levelItems[currentObjectIndex].IsItemOk();
+
         print("accept button was pressed");
-        if (levelItems[currentObjectIndex].IsItemOk())
+
+        if (isItemOk)
         {
-            score += 5;
+            score += POINTS;
         }
         else
         {
-            print(failedSaleResponseText());
+            showAngryManager(isItemOk);
         }
 
         displayNextItem();
@@ -85,32 +93,30 @@ public class Game : MonoBehaviour
     public void RefusePressed()
     {
         print("Refuse button was pressed");
-        if (levelItems[currentObjectIndex].IsItemOk())
+        bool isItemOk = levelItems[currentObjectIndex].IsItemOk();
+
+        if(isItemOk)
         {
-            print(failedSaleResponseText());
+            showAngryManager(isItemOk);
         }
         else
         {
-            score += 5;
+            score += POINTS;
         }
 
         displayNextItem();
-    }
-
-    public string failedSaleResponseText()
-    {
-        if (levelItems[currentObjectIndex].IsItemOk())
-        {
-            return "What are you doing?? this is a great price!";
-        }
-
-        return "Bloody hell, why did you bought this item?!";
     }
 
     public void notePressed()
     {
         noteUI.SetActive(true);
         noteUI.GetComponentInChildren<TMP_Text>().text = levelItems[currentObjectIndex].note;
+    }
+
+    public void showAngryManager(bool isItemOK)
+    {
+        sellerManager.gameObject.SetActive(true);
+        sellerManager.ShowWarning(isItemOK);
     }
 }
 
