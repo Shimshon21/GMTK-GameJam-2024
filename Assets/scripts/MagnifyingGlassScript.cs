@@ -17,8 +17,6 @@ public class MagnifyingGlassScript : MonoBehaviour
     private bool CanUse = false;
     [SerializeField] TMP_Text MagnifyingGlassText;
 
-   
-
     private void Start()
     {
         this.GetComponentInChildren<Canvas>().worldCamera = Camera.main;
@@ -49,6 +47,7 @@ public class MagnifyingGlassScript : MonoBehaviour
     {
         CanUse = true;
         difference = (Vector3)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector3)transform.position;
+        GetComponent<AudioSource>().Play();
     }
     private void OnMouseDrag()
     {

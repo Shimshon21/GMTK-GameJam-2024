@@ -14,6 +14,7 @@ public class ScaleScript : MonoBehaviour
 
        if (collision.GetComponent<ObjectForSale>() != null)
        {
+            GetComponent<AudioSource>().Play();
             scale.text = $"{collision.GetComponent<ObjectForSale>().actualItem.weight}";
             Debug.Log(collision.name);
        } else
