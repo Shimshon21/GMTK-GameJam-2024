@@ -8,30 +8,63 @@ public class Game : MonoBehaviour
     [SerializeField] private ObjectForSale[] levelItems;
     [SerializeField] private GameObject noteUI = null;
     [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text timeText;
+
+    [SerializeField] private EndGameManager endGameManager;
 
     private int score = 0;
     private int points = 5;
     private int currentObjectIndex = 0;
-    
+
+    public float targetTime = 60.0f;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        noteUI.SetActive(true);
-        noteUI.GetComponentInChildren<TMP_Text>().text = levelItems[currentObjectIndex].note;
+        notePressed();
         //noteUI.SetActive(false);
-  
     }
 
     // Update is called once per frame
     void Update()
     {
         scoreText.text = score.ToString();
+        targetTime -= Time.deltaTime;
+
+        int minutes = Mathf.FloorToInt(targetTime / 60);
+        int seconds = Mathf.FloorToInt(targetTime % 60);
+
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        if (targetTime < 0) {
+            EndGame();
+        }
     }
 
-    void displayItem(ObjectForSale levelItem)
+    void displayNextItem()
     {
 
+        levelItems[currentObjectIndex].gameObject.SetActive(false);
+
+        if (currentObjectIndex + 1 < levelItems.Length)
+        {
+            currentObjectIndex++;
+        } else
+        {
+            currentObjectIndex = 0;
+            EndGame();
+        }
+
+        print(currentObjectIndex);
+        print(levelItems.Length);
+        levelItems[currentObjectIndex].gameObject.SetActive(true);
+    }
+
+    void EndGame()
+    {
+        endGameManager.DisplayEndGamePopUp(score: score);
     }
 
     public void AcceptPressed()
@@ -43,8 +76,10 @@ public class Game : MonoBehaviour
         }
         else
         {
-            print(failedText());
+            print(failedSaleResponseText());
         }
+
+        displayNextItem();
     }
 
     public void RefusePressed()
@@ -52,15 +87,17 @@ public class Game : MonoBehaviour
         print("Refuse button was pressed");
         if (levelItems[currentObjectIndex].IsItemOk())
         {
-            print(failedText());
+            print(failedSaleResponseText());
         }
         else
         {
             score += 5;
         }
+
+        displayNextItem();
     }
 
-    public string failedText()
+    public string failedSaleResponseText()
     {
         if (levelItems[currentObjectIndex].IsItemOk())
         {
@@ -70,4 +107,10 @@ public class Game : MonoBehaviour
         return "Bloody hell, why did you bought this item?!";
     }
 
+    public void notePressed()
+    {
+        noteUI.SetActive(true);
+        noteUI.GetComponentInChildren<TMP_Text>().text = levelItems[currentObjectIndex].note;
+    }
 }
+

@@ -18,12 +18,6 @@ public class NoteButton : MonoBehaviour, IPointerDownHandler
     {
     }
 
-    public void ShowNote()
-    {
-        print("Show note button pressed");
-        note.SetActive(true);
-    }
-
     private void OnMouseEnter()
     {
         print("Mouse over");
@@ -38,6 +32,6 @@ public class NoteButton : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        ShowNote();
+        FindObjectOfType<Game>().notePressed();
     }
 }
