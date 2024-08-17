@@ -14,8 +14,8 @@ public class ObjectForSale : MonoBehaviour
     public bool IsItemOk()
     {
         Boolean isNameTrue = givenItem.name == actualItem.name;
-        Boolean isWeightTrue = givenItem.name == actualItem.name;
-        Boolean isQualityTrue = givenItem.name == actualItem.name;
+        Boolean isWeightTrue = givenItem.weight == actualItem.weight;
+        Boolean isQualityTrue = givenItem.isGoodQuality == actualItem.isGoodQuality;
         Boolean isPriceTrue = givenItem.price == actualItem.price;
 
         if(isNameTrue && isWeightTrue && isQualityTrue)

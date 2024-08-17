@@ -296,6 +296,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golden Fork
       objectReference: {fileID: 0}
+    - target: {fileID: 1975012404813229958, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975012404813229958, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3141695038808938075, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: m_Size.x
       value: 10.41
@@ -365,6 +373,14 @@ PrefabInstance:
     - target: {fileID: 5814480100951761493, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: actualItem.isGoodQuality
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590583026369018406, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590583026369018406, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6590583026369018406, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: m_LocalPosition.x
