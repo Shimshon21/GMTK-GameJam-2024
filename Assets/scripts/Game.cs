@@ -13,6 +13,10 @@ public class Game : MonoBehaviour
     [SerializeField] private EndGameManager endGameManager;
     [SerializeField] private AngrySellerManager sellerManager;
 
+    [Header("Sparkle")]
+    [SerializeField] private Transform sparkleSpawn;
+    [SerializeField] private GameObject sparkleEffect;
+
     private int score = 0;
     private int currentObjectIndex = 0;
 
@@ -86,6 +90,7 @@ public class Game : MonoBehaviour
         FindObjectOfType<AnimationMovment>().MoveToBuyer();
 
         displayNextItem();
+        Instantiate(sparkleEffect, sparkleSpawn);
     }
 
     public void RefusePressed()
