@@ -14,6 +14,8 @@ public class AnimationMovment : MonoBehaviour
         gameObject.transform.position = FindObjectOfType<EnterPoint>().transform.position;
 
         targetPosition = FindObjectOfType<SellingPoint>().transform.position;
+
+        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame

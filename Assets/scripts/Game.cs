@@ -17,6 +17,10 @@ public class Game : MonoBehaviour
     [SerializeField] private Transform sparkleSpawn;
     [SerializeField] private GameObject sparkleEffect;
 
+    [Header("Clips")]
+    [SerializeField] private AudioClip acceptClip;
+    [SerializeField] private AudioClip refuseClip;
+
     private int score = 0;
     private int currentObjectIndex = 0;
 
@@ -76,6 +80,9 @@ public class Game : MonoBehaviour
     {
         bool isItemOk = levelItems[currentObjectIndex].GetComponent<ObjectForSale>().IsItemOk();
 
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.clip = acceptClip;
+        audioSource.Play();
         print("accept button was pressed");
 
         if (isItemOk)
@@ -96,6 +103,9 @@ public class Game : MonoBehaviour
     public void RefusePressed()
     {
         print("Refuse button was pressed");
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.clip = refuseClip;
+        audioSource.Play();
         bool isItemOk = levelItems[currentObjectIndex].GetComponent<ObjectForSale>().IsItemOk();
 
         if(isItemOk)
