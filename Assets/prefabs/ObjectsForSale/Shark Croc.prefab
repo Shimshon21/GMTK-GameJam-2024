@@ -390,8 +390,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5814480100951761493, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: note
-      value: REAL SHARK, NOW IN CROCS! \n ONLY 1000 MONEYS \n Weighs a TON! \n Very
-        good quality, BUY PLEASE!
+      value: "REAL SHARK, NOW IN CROCS!\n\nONLY 1000 MONEYS \n\nWeighs a TON! \n\nVery
+        good quality, BUY PLEASE!"
       objectReference: {fileID: 0}
     - target: {fileID: 5814480100951761493, guid: ab1a85fc8fdf64a9da7e8690170d8365, type: 3}
       propertyPath: givenItem.name
