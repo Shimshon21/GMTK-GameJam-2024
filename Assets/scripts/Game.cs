@@ -31,9 +31,6 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // notePressed();
-        //noteUI.SetActive(false);
-
         Instantiate(levelItems[0]);
     }
 

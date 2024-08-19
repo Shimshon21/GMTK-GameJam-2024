@@ -11,6 +11,11 @@ public class ObjectForSale : MonoBehaviour
 
     [TextArea] public string note;
 
+    private void Start()
+    {
+        gameObject.transform.SetAsFirstSibling();
+    }
+
     public bool IsItemOk()
     {
         Boolean isNameTrue = givenItem.name == actualItem.name;
